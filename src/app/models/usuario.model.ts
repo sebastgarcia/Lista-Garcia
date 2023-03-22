@@ -5,5 +5,7 @@ export class Usuario {
     public lastName: string,
     public email: string,
     public age: number,
+    public isTop10: boolean,
+    public birthdate: Date,
   ) {}
 }
