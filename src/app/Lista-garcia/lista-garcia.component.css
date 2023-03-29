@@ -1,0 +1,20 @@
+.desaprobado {
+    background-color: rgb(194, 52, 52);
+    color: white;
+    font-weight: 700;
+}
+
+.aprobado {
+    background-color: rgb(34, 158, 34);
+    color: white;
+    font-weight: 700;
+}
+
+.center {
+    text-align: center;
+}
+
+th, td {
+    width: 16%;
+}
+

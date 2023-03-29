@@ -1,0 +1,30 @@
+
+
+<div class="container-fluid">
+  <h1 class="mb-3">
+    Tabla de usuarios
+  </h1>
+  <table class="table table-stripped">
+    <thead>
+      <tr>
+        <th>Nombre</th> 
+        <th>Apellido</th>
+        <th class="center">Primer Trimestre</th>
+        <th class="center">Seugundo Trimestre</th>
+        <th class="center">Tercer Trimestre</th>
+        <th class="center">Promedio</th>
+   
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let alumno of alumnos">
+        <td >{{alumno.nombre | uppercase}}</td>
+        <td >{{alumno.apellido | uppercase}}</td>
+        <td class="center" >{{alumno.primerTrimestre}}</td>
+        <td class="center" >{{alumno.segundoTrimestre}}</td>
+        <td class="center" >{{alumno.tercerTrimestre}}</td>
+        <td class="center" [ngClass]="alumno.aprobacion ? 'aprobado': 'desaprobado' ">{{alumno.promedio | number:'1.0-2'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
